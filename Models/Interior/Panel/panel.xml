@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- BOOST -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/boost/boost.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m> -0.108 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m> -0.036 </y-m>
+      <z-m>  0.050 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> 0.142 </x-m>
+      <y-m> 0.036 </y-m>
+      <z-m> 0.050 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> 0.142 </x-m>
+      <y-m> 0.108 </y-m>
+      <z-m> 0.050 </z-m>
+    </offsets>
+  </model>
+
+  <!-- CLOCK -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m>  0.141 </x-m>
+      <y-m> -0.168 </y-m>
+      <z-m> -0.020 </z-m>
+    </offsets>
+  </model>
+
+  <!-- CYLTEMP -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/cyltemp/cyltemp.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m> -0.108 </y-m>
+      <z-m> -0.020 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m> -0.036 </y-m>
+      <z-m> -0.020 </z-m>
+    </offsets>
+  </model>
+
+  <!-- AI -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m>  0.036 </y-m>
+      <z-m> -0.020 </z-m>
+    </offsets>
+  </model>
+
+  <!-- EGT -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/egt/egt.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m>  0.108 </y-m>
+      <z-m> -0.020 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TACH -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/tach/tach.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m> -0.108 </y-m>
+      <z-m> -0.090 </z-m>
+    </offsets>
+  </model>
+
+  <!-- FO-PSI -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/fo-psi/fo-psi.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m> -0.036 </y-m>
+      <z-m> -0.090 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ADF -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/adf/adf.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m>  0.036 </y-m>
+      <z-m> -0.090 </z-m>
+    </offsets>
+  </model>
+
+  <!-- OLITEMP -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/oiltemp/oiltemp.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m>  0.108 </y-m>
+      <z-m> -0.090 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+
