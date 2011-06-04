@@ -54,6 +54,8 @@
         <control-output control="FLAP0" prop="/surface-positions/flaps-pos-norm"/>
         <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
         <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
+
+        <control-speed control="FLAP0" transition-time="20"/>
   </wing>
 
   <hstab x="-3.944" y="0.0" z="0.089" 

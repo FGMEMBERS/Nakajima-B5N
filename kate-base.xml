@@ -83,7 +83,7 @@
       <running>true</running>
     </engine>
   </engines>
-
+<!--
   <consumables>
     <fuel>
       <tank n="0">
@@ -92,7 +92,7 @@
       </tank>
     </fuel>
   </consumables>
-
+-->
   <input>
     <keyboard include="Nasal/kate-keyboard.xml"/>
   </input>
