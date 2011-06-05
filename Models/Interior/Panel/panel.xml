@@ -123,6 +123,16 @@
     </offsets>
   </model>
 
+  <!-- PITCH -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/pitch/pitch.xml</path>
+    <offsets>
+      <x-m> 0.143 </x-m>
+      <y-m> 0.178 </y-m>
+      <z-m> 0.003 </z-m>
+    </offsets>
+  </model>
+
   <!-- EGT -->
   <model>
     <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/egt/egt.xml</path>
