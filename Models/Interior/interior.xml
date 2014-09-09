@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>inttour</object-name>
+    <object-name>intverriere1</object-name>
+    <object-name>intverriere2</object-name>
+    <object-name>intverriere3</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+    <object-name>intvitre1</object-name>
+    <object-name>intvitre2</object-name>
+    <object-name>intvitre3</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>intvitres</object-name>
+    <object-name>intvitre1</object-name>
+    <object-name>intvitre2</object-name>
+    <object-name>intvitre3</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intvitres</object-name>
+    <object-name>intvitre1</object-name>
+    <object-name>intvitre2</object-name>
+    <object-name>intvitre3</object-name>
+  </animation>
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -2.542 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.223 </z-m>
+    </offsets>
+  </model>
+
+  <!-- CoPilote -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -1.362 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.183 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Gunner -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> 0.192 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.163 </z-m>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Tableau de bord -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -2.915 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.425 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Canopy -->
+  <animation>
+    <name>IntCanopy1</name>
+    <object-name>intverriere1</object-name>
+    <object-name>intvitre1</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>IntCanopy1</object-name>
+    <property>instrumentation/doors/crew/position-norm</property>
+    <factor> 0.55 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>IntCanopy2</name>
+    <object-name>intverriere2</object-name>
+    <object-name>intvitre2</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>IntCanopy2</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <factor> 0.55 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>IntCanopy3</name>
+    <object-name>intverriere3</object-name>
+    <object-name>intvitre3</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>IntCanopy3</object-name>
+    <property>instrumentation/doors/gunner/position-norm</property>
+    <factor> -0.46 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

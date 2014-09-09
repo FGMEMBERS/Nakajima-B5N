@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+************************************************************************
+Nakajima-B5N Kate FDM YASim
+BARANGER Emmanuel                                                   2011
+************************************************************************
+-->
+
+<PropertyList include="kate-base.xml">
+
+  <sim>
+    <description>Nakajima-B5N Kate</description>
+    <flight-model>yasim</flight-model>
+    <aero>kate-yasim</aero>
+  </sim>
+
+</PropertyList>

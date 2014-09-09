@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Tanks to Tat for this link : http://gunsight.jp/c/type97cab.htm -->
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- TEXTES -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/text/text.xml</path>
+    <offsets>
+      <x-m> 0.143 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+    </offsets>
+  </model>
+
+  <!-- BOOST -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/boost/boost.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m> -0.112 </y-m>
+      <z-m>  0.074 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m> -0.060 </y-m>
+      <z-m>  0.074 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> 0.142 </x-m>
+      <y-m> 0.002 </y-m>
+      <z-m> 0.074 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> 0.142 </x-m>
+      <y-m> 0.065 </y-m>
+      <z-m> 0.074 </z-m>
+    </offsets>
+  </model>
+
+  <!-- CLOCK -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m>  0.140 </x-m>
+      <y-m> -0.209 </y-m>
+      <z-m> -0.095 </z-m>
+    </offsets>
+  </model>
+
+  <!-- FO-PSI -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/fo-psi/fo-psi.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m> -0.161 </y-m>
+      <z-m>  0.003 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TACH -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/tach/tach.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m> -0.112 </y-m>
+      <z-m>  0.019 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m> -0.060 </y-m>
+      <z-m>  0.019 </z-m>
+    </offsets>
+  </model>
+
+  <!-- AI -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> 0.142 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.008 </z-m>
+    </offsets>
+  </model>
+
+  <!-- COMPASS -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m> 0.142 </x-m>
+      <y-m> 0.071 </y-m>
+      <z-m> 0.002 </z-m>
+    </offsets>
+  </model>
+
+  <!-- PITCH -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/pitch/pitch.xml</path>
+    <offsets>
+      <x-m> 0.143 </x-m>
+      <y-m> 0.178 </y-m>
+      <z-m> 0.003 </z-m>
+    </offsets>
+  </model>
+
+  <!-- EGT -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/egt/egt.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m> -0.112 </y-m>
+      <z-m> -0.036 </z-m>
+    </offsets>
+  </model>
+
+  <!-- CYLTEMP -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/cyltemp/cyltemp.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m> -0.060 </y-m>
+      <z-m> -0.036 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ADF -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/adf/adf.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m> -0.060 </y-m>
+      <z-m> -0.094 </z-m>
+    </offsets>
+  </model>
+
+  <!-- OLITEMP -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/Interior/Panel/Instruments/oiltemp/oiltemp.xml</path>
+    <offsets>
+      <x-m>  0.144 </x-m>
+      <y-m>  0.238 </y-m>
+      <z-m> -0.089 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+
