@@ -304,78 +304,6 @@
       <max-dist>20.0</max-dist>
     </stall>
     
-    <click> 
-      <name>mag left click down</name>
-      <path>Sounds/click.wav</path>
-      <condition> 
-        <property>controls/engines/engine/mag-switch-left</property>
-      </condition>
-      <volume> 
-        <factor>1.0</factor>
-      </volume>
-    </click>
-    
-    <click> 
-      <name>mag left click up</name>
-      <path>Sounds/click.wav</path>
-      <condition> 
-        <not> 
-          <property>controls/engines/engine/mag-switch-left</property>
-        </not>
-      </condition>
-      <volume> 
-        <factor>1.0</factor>
-      </volume>
-    </click>
-    
-    <click> 
-      <name>mag right click down</name>
-      <path>Sounds/click.wav</path>
-      <condition> 
-        <property>controls/engines/engine/mag-switch-right</property>
-      </condition>
-      <volume> 
-        <factor>1.0</factor>
-      </volume>
-    </click>
-    
-    <click> 
-      <name>mag right click up</name>
-      <path>Sounds/click.wav</path>
-      <condition> 
-        <not> 
-          <property>controls/engines/engine/mag-switch-right</property>
-        </not>
-      </condition>
-      <volume> 
-        <factor>1.0</factor>
-      </volume>
-    </click>
-    
-    <click> 
-      <name>rgs main click down</name>
-      <path>Sounds/click.wav</path>
-      <condition> 
-        <property>controls/switches/gun-sight-main</property>
-      </condition>
-      <volume> 
-        <factor>1.0</factor>
-      </volume>
-    </click>
-    
-    <click> 
-      <name>rgs main click up</name>
-      <path>Sounds/click.wav</path>
-      <condition> 
-        <not> 
-          <property>controls/switches/gun-sight-main</property>
-        </not>
-      </condition>
-      <volume> 
-        <factor>1.0</factor>
-      </volume>
-    </click>
-    
     <guns> 
       <name>gunfire</name>
       <mode>looped</mode>
@@ -389,34 +317,6 @@
         <max>1.0</max>
       </volume>
     </guns>
-    
-    <click> 
-      <name>nav lights click down</name>
-      <path>Sounds/click.wav</path>
-      <condition> 
-        <property>controls/lighting/nav-lights</property>
-      </condition>
-      <volume> 
-        <factor>1.0</factor>
-        <min>0.1</min>
-        <max>0.9</max>
-      </volume>
-    </click>
-    
-    <click> 
-      <name>nav lights click up</name>
-      <path>Sounds/click.wav</path>
-      <condition> 
-        <not> 
-          <property>controls/lighting/nav-lights</property>
-        </not>
-      </condition>
-      <volume> 
-        <factor>1.0</factor>
-        <min>0.1</min>
-        <max>0.9</max>
-      </volume>
-    </click>
     
   </fx>
   

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -19,24 +19,15 @@
     <object-name>intvitre3</object-name>
   </animation>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>intvitres</object-name>
     <object-name>intvitre1</object-name>
     <object-name>intvitre2</object-name>
     <object-name>intvitre3</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>intvitres</object-name>
-    <object-name>intvitre1</object-name>
-    <object-name>intvitre2</object-name>
-    <object-name>intvitre3</object-name>
-  </animation>
-
+  </effect>
+  
   <!-- Pilote -->
   <model>
     <path>Aircraft/Nakajima-B5N/Models/Pilot/pilot.xml</path>
@@ -86,9 +77,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>IntCanopy1</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>translate</type>
     <object-name>IntCanopy1</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <factor> 0.55 </factor>
     <axis>
       <x> 1 </x>
@@ -104,9 +109,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>IntCanopy2</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>translate</type>
     <object-name>IntCanopy2</object-name>
-    <property>instrumentation/doors/passenger/position-norm</property>
+    <property>sim/model/door-positions/passenger/position-norm</property>
     <factor> 0.55 </factor>
     <axis>
       <x> 1 </x>
@@ -122,9 +141,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>IntCanopy3</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.gunner.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>translate</type>
     <object-name>IntCanopy3</object-name>
-    <property>instrumentation/doors/gunner/position-norm</property>
+    <property>sim/model/door-positions/gunner/position-norm</property>
     <factor> -0.46 </factor>
     <axis>
       <x> 1 </x>
@@ -134,4 +167,3 @@
   </animation>
 
 </PropertyList>
-

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -8,33 +8,73 @@
     <!-- Objets opaques -->
     <object-name>bloc</object-name>
     <object-name>bol</object-name>
-    <object-name>caches</object-name>
-    <object-name>cames</object-name>
-    <object-name>pistons</object-name>
-    <object-name>ecrous</object-name>
-    <object-name>bougies</object-name>
-    <object-name>tuyaux</object-name>
     <object-name>echappes</object-name>
     <object-name>moteurlow</object-name>
   </animation>
 
+  <model>
+    <name>Bloc1</name>
+    <path>Aircraft/Nakajima-B5N/Models/Engines/blocpiston.xml</path>
+  </model>
+  
+  <model>
+    <name>Bloc2</name>
+    <path>Aircraft/Nakajima-B5N/Models/Engines/blocpiston.xml</path>
+    <offsets>
+      <roll-deg> 60 </roll-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Bloc3</name>
+    <path>Aircraft/Nakajima-B5N/Models/Engines/blocpiston.xml</path>
+    <offsets>
+      <roll-deg> 120 </roll-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Bloc4</name>
+    <path>Aircraft/Nakajima-B5N/Models/Engines/blocpiston.xml</path>
+    <offsets>
+      <roll-deg> 180 </roll-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Bloc5</name>
+    <path>Aircraft/Nakajima-B5N/Models/Engines/blocpiston.xml</path>
+    <offsets>
+      <roll-deg> 240 </roll-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Bloc6</name>
+    <path>Aircraft/Nakajima-B5N/Models/Engines/blocpiston.xml</path>
+    <offsets>
+      <roll-deg> 300 </roll-deg>
+    </offsets>
+  </model>
+  
   <animation>
     <name>HighPoly</name>
+    <object-name>Bloc1</object-name>
+    <object-name>Bloc2</object-name>
+    <object-name>Bloc3</object-name>
+    <object-name>Bloc4</object-name>
+    <object-name>Bloc5</object-name>
+    <object-name>Bloc6</object-name>
     <object-name>bloc</object-name>
     <object-name>bol</object-name>
-    <object-name>caches</object-name>
-    <object-name>cames</object-name>
-    <object-name>pistons</object-name>
-    <object-name>ecrous</object-name>
-    <object-name>bougies</object-name>
-    <object-name>tuyaux</object-name>
     <object-name>echappes</object-name>
   </animation>
-
+  
   <animation>
     <name>LowPoly</name>
     <object-name>bol</object-name>
     <object-name>echappes</object-name>
+    <object-name>moteurlow</object-name>
   </animation>
 
   <animation>
@@ -42,11 +82,6 @@
     <object-name>bol</object-name>
     <property>engines/engine[0]/rpm</property>
     <factor> 1 </factor>
-    <center>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </center>
     <axis>
       <x> -1 </x>
       <y>  0 </y>
