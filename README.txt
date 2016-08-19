@@ -6,26 +6,23 @@ English/Français
 A little history
 ================
 
-GRUNMAN F6F Hellcat
-===================
+Nakajima B5N
+============
 
-Manufacturer                  : Grumman
-Type                          : 
-Year                          : 
-Powerplant                    : 
-Wingspan                      : 
-Length                        : 
-Height                        : 
-Loaded weight                 : 
-Cruise speed                  : 
-Range                         : 
-Crew                          : 
+Manufacturer                  :
+Type                          :
+Year                          :
+Powerplant                    :
+Wingspan                      :
+Length                        :
+Height                        :
+Loaded weight                 :
+Cruise speed                  :
+Range                         :
+Crew                          :
 
 Some useful keys:
 =================
-
-D : Open/Close bombs bay
-e : Open/Close wings (temporary)
 
 Thanks
 ======
@@ -35,6 +32,7 @@ BARANGER Emmanuel
 January, 05, 2010. 
 
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr
 
 
@@ -44,27 +42,24 @@ embaranger@free.fr
 Un peu d'histoire
 =================
 
-GRUMMAN F6F Hellcat
-===================
+Nakajima B5N
+============
 
-Constructeur                  : Grumman
-Type                          : 
-Année                         : 
-Moteur                        : 
-Envergure                     : 
-Longueur                      : 
-Hauteur                       : 
-Poids estimé au décollage     : 
-Vitesse estimée de croisière  : 
-Autonomie estimée             : 
-Equipage                      : 
+Constructeur                  :
+Type                          :
+Année                         :
+Moteur                        :
+Envergure                     :
+Longueur                      :
+Hauteur                       :
+Poids estimé au décollage     :
+Vitesse estimée de croisière  :
+Autonomie estimée             :
+Equipage                      :
 
 
 Quelques touches utiles :
 =========================
-
-D : Ouverture/Fermeture de la soute à bombes
-e : Pliage des ailes (temporairement)
 
 Remerciements
 =============
@@ -74,5 +69,5 @@ BARANGER Emmanuel
 05 Janvier 2010.
 
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr
-

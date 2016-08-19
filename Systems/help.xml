@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <title>Nakajima B5N kate</title>
+  <line>______________________________________________</line>
+  <key>
+    <name>d</name>
+    <desc>Open/Close pilot canopy</desc>
+  </key>
+  <key>
+    <name>D</name>
+    <desc>Open/Close copilot canopy</desc>
+  </key>
+  <key>
+    <name>Ctrl+d</name>
+    <desc>Open/Close gunner canopy</desc>
+  </key>
+  <key>
+    <name>E</name>
+    <desc>Open/Close wings</desc>
+  </key>
+  <key>
+    <name>o/O</name>
+    <desc>Hook up/down</desc>
+  </key>
+  
+</PropertyList>

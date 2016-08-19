@@ -4,6 +4,11 @@
 
   <path>kate.ac</path>
 
+  <!-- MP sound call -->
+  <sound>
+    <path>Aircraft/Nakajima-B5N/Sounds/mp-sound.xml</path>
+  </sound>
+  
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/Nakajima-B5N/Models/Liveries", 10);
@@ -12,18 +17,26 @@
 
       var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
       var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      var float_2 = self.getNode("sim/multiplay/generic/float[12]", 1);
+      var float_3 = self.getNode("sim/multiplay/generic/float[13]", 1);
       
-      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
-      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
-    
+      var crew_door = self.getNode("sim/model/door-positions/crew/position-norm", 1);
+      var passenger_door = self.getNode("sim/model/door-positions/passenger/position-norm", 1);
+      var gunner_door = self.getNode("sim/model/door-positions/gunner/position-norm", 1);
+      var wings_door = self.getNode("sim/model/door-positions/wings/position-norm", 1);
+      
       crew_door.alias(float_0);
       passenger_door.alias(float_1);
+      gunner_door.alias(float_2);
+      wings_door.alias(float_3);
     </load>
 
     <unload>
       livery_update.stop();
       crew_door.unalias();
       passenger_door.unalias();
+      gunner_door.unalias();
+      wings_door.unalias();
     </unload>
   </nasal>
 
@@ -64,6 +77,15 @@
     <object-name>ailette8</object-name>
     <object-name>ailette9</object-name>
     <object-name>air</object-name>
+    <object-name>ailette1</object-name>
+    <object-name>ailette2</object-name>
+    <object-name>ailette3</object-name>
+    <object-name>ailette4</object-name>
+    <object-name>ailette5</object-name>
+    <object-name>ailette6</object-name>
+    <object-name>ailette7</object-name>
+    <object-name>ailette8</object-name>
+    <object-name>ailette9</object-name>
 
     <object-name>crosse</object-name>
     <object-name>trous</object-name>
@@ -71,14 +93,17 @@
     <object-name>trousaileD</object-name>
     <object-name>helice</object-name>
     <object-name>bol</object-name>
-    <object-name>axeG</object-name>
+    <object-name>axeGH</object-name>
+    <object-name>axeGB</object-name>
     <object-name>roueG</object-name>
-    <object-name>axeD</object-name>
+    <object-name>axeDH</object-name>
+    <object-name>axeDB</object-name>
     <object-name>roueD</object-name>
     <object-name>axeA</object-name>
     <object-name>roueA</object-name>
     <object-name>echappes</object-name>
-
+    <object-name>cables</object-name>
+    
     <!-- draw this at last (order critical!) -->
     <object-name>vitres</object-name>
     <object-name>vitre1</object-name>
@@ -86,7 +111,6 @@
     <object-name>vitre3</object-name>
     <object-name>propblur</object-name>
     <object-name>propdisc</object-name>
-    <object-name>cables</object-name>
   </animation>
 
   <animation>
@@ -126,53 +150,41 @@
     <object-name>ailette8</object-name>
     <object-name>ailette9</object-name>
     <object-name>air</object-name>
-
+    <object-name>ailette1</object-name>
+    <object-name>ailette2</object-name>
+    <object-name>ailette3</object-name>
+    <object-name>ailette4</object-name>
+    <object-name>ailette5</object-name>
+    <object-name>ailette6</object-name>
+    <object-name>ailette7</object-name>
+    <object-name>ailette8</object-name>
+    <object-name>ailette9</object-name>
+    
     <object-name>crosse</object-name>
     <object-name>trous</object-name>
     <object-name>trousaileG</object-name>
     <object-name>trousaileD</object-name>
     <object-name>helice</object-name>
     <object-name>bol</object-name>
-    <object-name>axeG</object-name>
+    <object-name>axeGH</object-name>
+    <object-name>axeGB</object-name>
     <object-name>roueG</object-name>
-    <object-name>axeD</object-name>
+    <object-name>axeDH</object-name>
+    <object-name>axeDB</object-name>
     <object-name>roueD</object-name>
     <object-name>axeA</object-name>
     <object-name>roueA</object-name>
     <object-name>echappes</object-name>
-
+    <object-name>cables</object-name>
+    
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
-<!--
-    <diffuse>
-      <red-prop>diffuse/red</red-prop>
-      <green-prop>diffuse/green</green-prop>
-      <blue-prop>diffuse/blue</blue-prop>
-    </diffuse>
-
-    <ambient>
-      <red-prop>ambient/red</red-prop>
-      <green-prop>ambient/green</green-prop>
-      <blue-prop>ambient/blue</blue-prop>
-    </ambient>
--->
     <specular>
       <red-prop>specular/red</red-prop>
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-
-    <emission>
-      <red-prop>emission/red</red-prop>
-      <green-prop>emission/green</green-prop>
-      <blue-prop>emission/blue</blue-prop>
-    </emission>
-<!--
-    <shininess>
-      <shininess-prop>shininess</shininess-prop>
-    </shininess>
--->
   </animation>
 
   <effect>
@@ -212,43 +224,49 @@
     <object-name>ailette8</object-name>
     <object-name>ailette9</object-name>
     <object-name>air</object-name>
+    <object-name>ailette1</object-name>
+    <object-name>ailette2</object-name>
+    <object-name>ailette3</object-name>
+    <object-name>ailette4</object-name>
+    <object-name>ailette5</object-name>
+    <object-name>ailette6</object-name>
+    <object-name>ailette7</object-name>
+    <object-name>ailette8</object-name>
+    <object-name>ailette9</object-name>
   </effect>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Nakajima-B5N/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitres</object-name>
     <object-name>vitre1</object-name>
     <object-name>vitre2</object-name>
     <object-name>vitre3</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>vitres</object-name>
     <object-name>propblur</object-name>
     <object-name>propdisc</object-name>
     <object-name>vitre1</object-name>
     <object-name>vitre2</object-name>
     <object-name>vitre3</object-name>
-    <object-name>cables</object-name>
-  </animation>
-
+  </effect>
+  
   <!-- Une ombre pour OSG -->
   <model>
-    <name>shadowOSG</name>
     <path>Aircraft/Nakajima-B5N/Models/shadow.xml</path>
+    <offsets>
+      <x-m>  0.00 </x-m>
+      <y-m>  0.00 </y-m>
+      <z-m> -1.75 </z-m>
+    </offsets>
   </model>
 
   <!-- Interior -->
   <model>
     <path>Aircraft/Nakajima-B5N/Models/Interior/interior.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </offsets>
   </model>
 
   <!-- Torpille -->
@@ -271,7 +289,7 @@
       <y-m> -0.390 </y-m>
       <z-m> -0.709 </z-m>
       <heading-deg> -20 </heading-deg>
-      <pitch-deg> 25 </pitch-deg>
+      <pitch-deg>    25 </pitch-deg>
     </offsets>
   </model>
 
@@ -283,7 +301,7 @@
       <y-m>  0.390 </y-m>
       <z-m> -0.709 </z-m>
       <heading-deg> 20 </heading-deg>
-      <pitch-deg> 25 </pitch-deg>
+      <pitch-deg>   25 </pitch-deg>
     </offsets>
   </model>
 
@@ -374,19 +392,19 @@
     <type>select</type>
     <object-name>propblur</object-name>
     <condition>
-    <and>
-      <greater-than>
-        <property>engines/engine[0]/rpm</property>
-        <value>600.000</value>
-      </greater-than>
-      <less-than>
-        <property>engines/engine[0]/rpm</property>
-        <value>1500.001</value>
-      </less-than>
-    </and>
+      <and>
+        <greater-than>
+          <property>engines/engine[0]/rpm</property>
+          <value>600.000</value>
+        </greater-than>
+        <less-than>
+          <property>engines/engine[0]/rpm</property>
+          <value>1500.001</value>
+        </less-than>
+      </and>
     </condition>
   </animation>
-
+  
   <animation>
     <type>select</type>
     <object-name>helice</object-name>
@@ -401,6 +419,12 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceComplete</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[0]/rpm</property>
+        <value> 100 </value>
+      </greater-than>
+    </condition>
     <property>engines/engine[0]/rpm</property>
     <factor> 1 </factor>
     <center>
@@ -421,12 +445,28 @@
     <object-name>aileG</object-name>
     <object-name>aileronG</object-name>
     <object-name>trousaileG</object-name>
+    <object-name>L1</object-name>
+    <object-name>L2</object-name>
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>AileGauche</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.wings.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>rotate</type>
     <object-name>AileGauche</object-name>
-    <property>instrumentation/doors/wings/position-norm</property>
+    <property>sim/model/door-positions/wings/position-norm</property>
     <factor> -136 </factor>
     <axis>
       <x1-m> -1.825 </x1-m>
@@ -443,12 +483,28 @@
     <object-name>aileD</object-name>
     <object-name>aileronD</object-name>
     <object-name>trousaileD</object-name>
+    <object-name>R1</object-name>
+    <object-name>R2</object-name>
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>AileDroite</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.wings.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>rotate</type>
     <object-name>AileDroite</object-name>
-    <property>instrumentation/doors/wings/position-norm</property>
+    <property>sim/model/door-positions/wings/position-norm</property>
     <factor> 155 </factor>
     <axis>
       <x1-m> -1.825 </x1-m>
@@ -594,9 +650,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>Canopy1</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>translate</type>
     <object-name>Canopy1</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <factor> 0.55 </factor>
     <axis>
       <x> 1 </x>
@@ -612,9 +682,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>Canopy2</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>translate</type>
     <object-name>Canopy2</object-name>
-    <property>instrumentation/doors/passenger/position-norm</property>
+    <property>sim/model/door-positions/passenger/position-norm</property>
     <factor> 0.55 </factor>
     <axis>
       <x> 1 </x>
@@ -630,9 +714,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>Canopy3</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.gunner.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>translate</type>
     <object-name>Canopy3</object-name>
-    <property>instrumentation/doors/gunner/position-norm</property>
+    <property>sim/model/door-positions/gunner/position-norm</property>
     <factor> -0.46 </factor>
     <axis>
       <x> 1 </x>
@@ -647,8 +745,8 @@
     <object-name>crosse</object-name>
     <property>gear/tailhook/position-norm</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep>  0 </dep></entry>
-      <entry><ind> 1.0 </ind><dep> 25 </dep></entry>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 25 </dep></entry>
     </interpolation>
     <center>
       <x-m>  3.237 </x-m>
@@ -856,7 +954,8 @@
   <!-- rentree des roues -->
   <animation>
     <name>RoueGauche</name>
-    <object-name>axeG</object-name>
+    <object-name>axeGH</object-name>
+    <object-name>axeGB</object-name>
     <object-name>roueG</object-name>
   </animation>
 
@@ -882,7 +981,8 @@
 
   <animation>
     <name>RoueDroite</name>
-    <object-name>axeD</object-name>
+    <object-name>axeDH</object-name>
+    <object-name>axeDB</object-name>
     <object-name>roueD</object-name>
   </animation>
 
@@ -906,6 +1006,49 @@
     </axis>
   </animation>
 
+  <!-- Compression -->
+  <animation>
+    <name>RougeGauche</name>
+    <object-name>axeGB</object-name>
+    <object-name>roueG</object-name>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>RougeGauche</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0.0000 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.1819 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0.026 </x>
+      <y> 0.000 </y>
+      <z> 0.180 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <name>RougeDroite</name>
+    <object-name>axeDB</object-name>
+    <object-name>roueD</object-name>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>RougeDroite</object-name>
+    <property>gear/gear[1]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0.0000 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.1819 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0.026 </x>
+      <y> 0.000 </y>
+      <z> 0.180 </z>
+    </axis>
+  </animation>
+  
   <!-- Rotation des roues lors du roulage -->
   <animation>
     <type>spin</type>
@@ -1159,5 +1302,54 @@
     </axis>
   </animation>
 
+  <!-- Ajout des effets lumineux -->
+  <model>
+    <path>Aircraft/Nakajima-B5N/Models/light/beacon.xml</path>
+    <offsets>
+      <x-m> 4.09321 </x-m>
+      <y-m> 0.00000 </y-m>
+      <z-m> 1.75621 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>L1</name>
+    <path>Aircraft/Nakajima-B5N/Models/light/RedLight.xml</path>
+    <offsets>
+      <x-m> -1.56236 </x-m>
+      <y-m> -7.69859 </y-m>
+      <z-m>  0.05918 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>L2</name>
+    <path>Aircraft/Nakajima-B5N/Models/light/StrobeLight.xml</path>
+    <offsets>
+      <x-m> -1.53454 </x-m>
+      <y-m> -7.70771 </y-m>
+      <z-m>  0.05918 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>R1</name>
+    <path>Aircraft/Nakajima-B5N/Models/light/GreenLight.xml</path>
+    <offsets>
+      <x-m> -1.56236 </x-m>
+      <y-m>  7.69859 </y-m>
+      <z-m>  0.05918 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>R2</name>
+    <path>Aircraft/Nakajima-B5N/Models/light/StrobeLight.xml</path>
+    <offsets>
+      <x-m> -1.53454 </x-m>
+      <y-m>  7.70771 </y-m>
+      <z-m>  0.05918 </z-m>
+    </offsets>
+  </model>
+  
 </PropertyList>
-
