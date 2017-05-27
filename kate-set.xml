@@ -16,6 +16,24 @@
       <cockpit type="int"> 2 </cockpit>
       <model type="int">   4 </model>
     </rating>
+
+    <tags>
+      <tag>nakajima</tag>
+      <tag>low-wing</tag>
+      <tag>tail-dragger</tag>
+      <tag>retractable-gear</tag>
+      <tag>single-engine</tag>
+      <tag>piston</tag>
+      <tag>bomber</tag>
+      <tag>carrier</tag>
+      <tag>supercharger</tag>
+      <tag>tail-hook</tag>
+      <tag>wing-fold</tag>
+      <tag>radial</tag>
+      <tag>1940s</tag>
+      <tag>ww2</tag>
+    </tags>
+     
     
   </sim>
 
